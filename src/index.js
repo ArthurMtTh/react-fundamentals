@@ -7,7 +7,7 @@ import First from './components/basics/First';
 import ReacDOM from 'react-dom'
 import React from 'react'
 
-const tag = <strong>React</strong>
+const tag = <strong>React </strong>
 
 ReacDOM.render(
     <div>
