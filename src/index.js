@@ -7,6 +7,7 @@ import React from 'react'
 //components import
 import First from './components/basics/First';
 import SecondParams from './components/basics/Second-params';
+import Fragment from './components/basics/Fragment';
 
 ReacDOM.render(
     <div>
@@ -18,6 +19,8 @@ ReacDOM.render(
         <SecondParams
         situation='student situation' 
         name='Jill'
-        grade={8.5}/>
+        grade={6.5}/>
+
+        <Fragment/>
     </div>, 
 document.getElementById('root'))
