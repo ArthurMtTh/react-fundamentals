@@ -3,11 +3,9 @@ import React from "react";
 //components import
 import RandomNumber from './components/basics/First';
 import SecondParams from './components/basics/Second-params';
-import Fragment from './components/basics/Fragment';
 
 const app = () => (
     <div>
-        <RandomNumber/>
         <SecondParams
             situation='student situation'
             name='Dex'
@@ -18,7 +16,7 @@ const app = () => (
             name='Jill'
             grade={6.5} />
 
-        <Fragment />
+        <RandomNumber min={1} max={99} />
     </div>
 );
 
