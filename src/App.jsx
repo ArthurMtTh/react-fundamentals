@@ -11,7 +11,8 @@ import Card from "./components/layout/Card";
 const app = () => (
     <div className="App">
         <div className="Cards">
-            <Card title='First'>
+
+            <Card title='First' color='#1D8348'>
                 <SecondParams
                     situation='student situation'
                     name='Dex'
@@ -28,6 +29,7 @@ const app = () => (
             <Card title='Radom Number'>
                 <RandomNumber min={1} max={99} />
             </Card>
+
         </div>
     </div>
 );
