@@ -4,9 +4,11 @@ import React from "react";
 import './App.css'
 
 //components import
-import RandomNumber from './components/basics/First';
-import SecondParams from './components/basics/Second-params';
 import Card from "./components/layout/Card";
+
+import CompFamily from './components/basics/CompFamily'
+import RandomNumber from './components/basics/First';
+import SecondParams from './components/basics/SecondParams';
 
 const app = () => (
     <div className="App">
@@ -30,6 +32,9 @@ const app = () => (
                 <RandomNumber min={1} max={99} />
             </Card>
 
+            <Card title='Family Members'>
+                <CompFamily lastName='Fergusson'/>
+            </Card>
         </div>
     </div>
 );
