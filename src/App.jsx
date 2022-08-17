@@ -6,6 +6,7 @@ import './App.css'
 //components import
 import Card from "./components/layout/Card";
 
+import CompMember from './components/basics/CompMember'
 import CompFamily from './components/basics/CompFamily'
 import RandomNumber from './components/basics/First';
 import SecondParams from './components/basics/SecondParams';
@@ -33,7 +34,11 @@ const app = () => (
             </Card>
 
             <Card title='Family Members'>
-                <CompFamily lastName='Fergusson'/>
+                <CompFamily lastName='Fergusson'>
+                    <CompMember name='Karen' lastName='Von Neuman' />
+                    {/*<CompMember name='Harry' {...props} />
+                    <CompMember name='Karoline' lastName='Dossy' />*/}
+                </CompFamily>
             </Card>
         </div>
     </div>
