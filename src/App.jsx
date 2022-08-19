@@ -35,9 +35,9 @@ const app = () => (
 
             <Card title='Family Members'>
                 <CompFamily lastName='Fergusson'>
-                    <CompMember name='Karen' lastName='Von Neuman' />
-                    {/*<CompMember name='Harry' {...props} />
-                    <CompMember name='Karoline' lastName='Dossy' />*/}
+                    <CompMember name='Karen' />
+                    <CompMember name='Harry' />
+                    <CompMember name='Karoline' />
                 </CompFamily>
             </Card>
         </div>
