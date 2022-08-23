@@ -10,6 +10,7 @@ import CompMember from './components/basics/CompMember'
 import CompFamily from './components/basics/CompFamily'
 import RandomNumber from './components/basics/First';
 import SecondParams from './components/basics/SecondParams';
+import ListStudent from './components/repeat/ListStudent'
 
 const app = () => (
     <div className="App">
@@ -22,13 +23,6 @@ const app = () => (
                     grade={9.3} />
             </Card>
 
-            <Card title="Second">
-                <SecondParams
-                    situation='student situation'
-                    name='Jill'
-                    grade={6.5} />
-            </Card>
-
             <Card title='Radom Number'>
                 <RandomNumber min={1} max={99} />
             </Card>
@@ -39,6 +33,10 @@ const app = () => (
                     <CompMember name='Harry' />
                     <CompMember name='Karoline' />
                 </CompFamily>
+            </Card>
+
+            <Card title="List Students">
+                <ListStudent/>
             </Card>
         </div>
     </div>
