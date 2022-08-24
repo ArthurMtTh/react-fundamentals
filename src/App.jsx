@@ -1,16 +1,16 @@
 import React from "react";
 
 //stylesheet
-import './App.css'
+import './App.css';
 
 //components import
 import Card from "./components/layout/Card";
 
-import CompMember from './components/basics/CompMember'
-import CompFamily from './components/basics/CompFamily'
-import RandomNumber from './components/basics/First';
+import CompMember from './components/basics/CompMember';
+import CompFamily from './components/basics/CompFamily';
 import SecondParams from './components/basics/SecondParams';
-import ListStudent from './components/repeat/ListStudent'
+import ListStudent from './components/repeat/ListStudent';
+import TableProducts from "./components/repeat/TableProducts";
 
 const app = () => (
     <div className="App">
@@ -23,10 +23,6 @@ const app = () => (
                     grade={9.3} />
             </Card>
 
-            <Card title='Radom Number'>
-                <RandomNumber min={1} max={99} />
-            </Card>
-
             <Card title='Family Members'>
                 <CompFamily lastName='Fergusson'>
                     <CompMember name='Karen' />
@@ -35,8 +31,12 @@ const app = () => (
                 </CompFamily>
             </Card>
 
-            <Card title="List Students">
+            <Card title="List Students" color='#D4AC0D'>
                 <ListStudent/>
+            </Card>
+
+            <Card title='Table of Products' color='#6C3483'>
+                <TableProducts/>
             </Card>
         </div>
     </div>

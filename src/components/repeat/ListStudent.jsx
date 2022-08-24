@@ -13,7 +13,7 @@ const listStudents = (props) => {
 
     return (
         <div>
-            <ul>
+            <ul style={{ listStyle:'none' }}>
                 {studentList}
             </ul>
         </div>
