@@ -4,6 +4,10 @@ table, th, td {
     border-radius: 10px;
 }
 
+table {
+    width: 100%;
+}
+
 th, td {
     background-color: #B3B6B7;
 }

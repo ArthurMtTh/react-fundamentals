@@ -15,11 +15,11 @@ const tableProducts = (props) => {
     })
 
     return (
-        <table style={{width:'100%'}}>
+        <table>
             <tr>
-                <th>id</th>
-                <th>fruit</th>
-                <th>price US$</th>
+                <th>ID</th>
+                <th>Fruit</th>
+                <th>Price US$</th>
             </tr>
             {table}
         </table>

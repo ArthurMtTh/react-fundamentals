@@ -2,7 +2,6 @@ import './Card.css'
 import React from "react";
 
 const card = (props) => {
-
     return (
         <div className="Card" style={{
             backgroundColor: props.color || '#a53a3a'
@@ -18,4 +17,5 @@ const card = (props) => {
         </div>
     );
 }
+
 export default card;
