@@ -16,12 +16,16 @@ const tableProducts = (props) => {
 
     return (
         <table>
-            <tr>
-                <th>ID</th>
-                <th>Fruit</th>
-                <th>Price US$</th>
-            </tr>
-            {table}
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Fruit</th>
+                    <th>Price US$</th>
+                </tr>
+            </thead>
+            <tbody>
+                {table}
+            </tbody>
         </table>
     )
 }

@@ -51,8 +51,7 @@ const app = () => (
             </Card>
 
             <Card title='User'>
-                <User user={{name:'Kendrick'}}/>
-                <User user={{email:'key@xmail.com'}}/>
+                <User user={{ name: 'kal'}}/>
             </Card>
         </div>
     </div>
