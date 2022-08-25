@@ -6,13 +6,18 @@ import './App.css';
 //components import
 import Card from "./components/layout/Card";
 
+//basics
 import CompMember from './components/basics/CompMember';
 import CompFamily from './components/basics/CompFamily';
 import SecondParams from './components/basics/SecondParams';
 
+//repeat
 import ListStudent from './components/repeat/ListStudent';
 import TableProducts from "./components/repeat/TableProducts";
+
+//conditional
 import EvenOdd from "./components/conditional/EvenOdd";
+import User from "./components/conditional/User";
 
 const app = () => (
     <div className="App">
@@ -25,7 +30,7 @@ const app = () => (
                     grade={9.3} />
             </Card>
 
-            <Card title='Family Members'>
+            <Card title='Family Members' color='#D35400'>
                 <CompFamily lastName='Fergusson'>
                     <CompMember name='Karen' />
                     <CompMember name='Harry' />
@@ -41,8 +46,13 @@ const app = () => (
                 <TableProducts/>
             </Card>
 
-            <Card title='Even or Odd'>
+            <Card title='Even or Odd' color='#2471A3'>
                 <EvenOdd number={21}/>
+            </Card>
+
+            <Card title='User'>
+                <User user={{name:'Kendrick'}}/>
+                <User user={{email:'key@xmail.com'}}/>
             </Card>
         </div>
     </div>
