@@ -17,7 +17,7 @@ import TableProducts from "./components/repeat/TableProducts";
 
 //conditional
 import EvenOdd from "./components/conditional/EvenOdd";
-import User from "./components/conditional/User";
+import Direct from "./components/comunication/Direct";
 
 const app = () => (
     <div className="App">
@@ -50,8 +50,8 @@ const app = () => (
                 <EvenOdd number={21}/>
             </Card>
 
-            <Card title='User'>
-                <User user={{ name: 'kal'}}/>
+            <Card title='Direct communication'>
+                <Direct/>
             </Card>
         </div>
     </div>
