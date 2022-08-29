@@ -17,7 +17,8 @@ import TableProducts from "./components/repeat/TableProducts";
 
 //conditional
 import EvenOdd from "./components/conditional/EvenOdd";
-import Direct from "./components/comunication/Direct";
+import Direct from "./components/comunication/direct/Direct";
+import Indirect from "./components/comunication/indirect/Indirect";
 
 const app = () => (
     <div className="App">
@@ -52,6 +53,10 @@ const app = () => (
 
             <Card title='Direct communication'>
                 <Direct/>
+            </Card>
+            
+            <Card title='Indirect communication'>
+                <Indirect/>
             </Card>
         </div>
     </div>

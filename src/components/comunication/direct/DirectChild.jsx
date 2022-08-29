@@ -1,6 +1,6 @@
 import React from "react";
 
-const directChild = () => {
+const directChild = (props) => {
     return(
         <React.Fragment>
             <span>{props.text} </span>
