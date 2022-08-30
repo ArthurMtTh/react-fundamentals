@@ -1,21 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import IndirectChild from "./IndirectChild";
 
-const indirect = () => {
+const indirect = (props) => {
 
-    let name = '?'
-    let age = 49
-    let work = false
+    const [name, setName] = useState('?')
+    const [age, setAge] = useState(0)
+    const [work, setWork] = useState(false)
 
     function getInfos(name, age, work) {
-        console.log(name, age, work)
+        setName(name)
+        setAge(age)
+        setWork(work)
     }
 
     return (
         <div>
             <div>
-                <span>{name} / </span> 
-                <span>{age} / </span>
+                <span>{name}</span><br></br> 
+                <span>{age}</span><br></br>
                 <span>{work ? 'Working' : 'No money'}</span>
             </div>
             <IndirectChild clickButton={getInfos}>

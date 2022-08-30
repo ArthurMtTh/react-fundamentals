@@ -51,7 +51,7 @@ const app = () => (
                 <EvenOdd number={21}/>
             </Card>
 
-            <Card title='Direct communication'>
+            <Card title='Direct communication' color="#45B39D">
                 <Direct/>
             </Card>
             
