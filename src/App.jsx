@@ -20,6 +20,9 @@ import EvenOdd from "./components/conditional/EvenOdd";
 import Direct from "./components/comunication/direct/Direct";
 import Indirect from "./components/comunication/indirect/Indirect";
 
+//form
+import Input from "./components/form/Input";
+
 const app = () => (
     <div className="App">
         <div className="Cards">
@@ -55,8 +58,12 @@ const app = () => (
                 <Direct/>
             </Card>
             
-            <Card title='Indirect communication'>
+            <Card title='Indirect communication' color="#E67E22">
                 <Indirect/>
+            </Card>
+
+            <Card title='Input'>
+                <Input/>
             </Card>
         </div>
     </div>
