@@ -23,6 +23,9 @@ import Indirect from "./components/comunication/indirect/Indirect";
 //form
 import Input from "./components/form/Input";
 
+//counter
+import Counter from "./components/counter/Counter";
+
 const app = () => (
     <div className="App">
         <div className="Cards">
@@ -62,9 +65,14 @@ const app = () => (
                 <Indirect/>
             </Card>
 
-            <Card title='Input'>
+            <Card title='Input' color='#FF33F6'>
                 <Input/>
             </Card>
+
+            <Card title='Counter'>
+                <Counter initNumber={0}></Counter>
+            </Card>
+
         </div>
     </div>
 );
