@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 
+import Display from "./Display";
+import Buttons from "./Buttons";
+import Interval from "./Interval";
+
 export default class Counter extends Component {
 
         state = {
@@ -19,24 +23,18 @@ export default class Counter extends Component {
             })
         }
 
-        setInterval = (event) => {
+        setInterval = (newInterval) => {
             this.setState({
-                interval: +event.target.value 
+                interval: newInterval 
             })
         }
     render () {
         return (
             <div>
                 <h2>Counter</h2>
-                <p>Initial: {this.state.number}</p>
-                <label htmlFor="intervalInput"> Interval</label>
-                <input
-                    id='intervalInput'
-                    type="number" 
-                    value={this.state.interval}
-                    onChange={this.setInterval} />
-                <button onClick={this.increment}>+</button>
-                <button onClick={this.decrement}>-</button>
+                <Display number={this.state.number}/>
+                <Interval interval={this.state.interval} setInterval={this.setInterval} />
+                <Buttons increment={this.increment} decrement={this.decrement} />
             </div>
         )
     }
